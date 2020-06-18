@@ -10,4 +10,4 @@
 
 ## Colors Palete
 
-![Colors Palete](./AdobeColor-Portfolio.png)
+![Colors Palete](./AdobeColor-Portfolio.jpeg)
