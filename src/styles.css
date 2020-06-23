@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 /* Reset CSS =============================================================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,8 +47,6 @@ table {
 }
 /* Reset CSS ends ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
-
 :root {
   --primary: #2C3E50 !important;
   --secondary: #79AADB !important;
@@ -56,4 +56,58 @@ table {
   --danger: #dc3545 !important;
   --light: #f8f9fa !important;
   --dark: #1D2A36 !important;
+}
+
+/* Color Theme Swatches in Hex */
+.secondary {
+	background: #79AADB;
+	color: #FFFFFF;
+}
+.info {
+	background: #56799C;
+	color: #FFFFFF;
+}
+.primary {
+	background: #2C3E50;
+	color: #FFFFFF;
+}
+.dark {
+	background: #1D2A36;
+	color: #FFFFFF;
+}
+
+.text-secondary {
+	color: #79AADB;
+}
+.text-info {
+	color: #56799C;
+}
+.text-primary {
+	color: #2C3E50;
+}
+.text-dark {
+	color: #1D2A36;
+}
+
+body {
+	min-width: 100vw;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, a, thead, th, .title {
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body, div, span, applet, object, iframe, 
+p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, tr, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family: 'Open Sans', sans-serif;
 }
