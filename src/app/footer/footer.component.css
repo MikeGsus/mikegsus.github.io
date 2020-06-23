@@ -1,0 +1,38 @@
+.container {
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.ubication {
+  justify-content: center;
+  align-items: center;
+}
+
+.ubication {
+  text-align: center;
+}
+
+.networks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  background: #1D2A36;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  padding: .1rem .7rem;
+  font-size: 2rem;
+}
+
+a:hover {
+  background:  #ffffff;
+  border: 1px solid  #1D2A36;
+  color:  #1D2A36;
+}
+
+.gross {
+  margin: .3rem;
+}
