@@ -1,0 +1,10 @@
+.principal-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
