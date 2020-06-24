@@ -8,10 +8,6 @@
   align-items: center;
 }
 
-.ubication {
-  text-align: center;
-}
-
 .networks {
   display: flex;
   justify-content: space-evenly;
