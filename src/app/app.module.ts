@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { ProjectSectionComponent } from './project-section/project-section.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     FooterComponent,
     HomeComponent,
     ProjectSectionComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
