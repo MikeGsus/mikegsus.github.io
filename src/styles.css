@@ -77,16 +77,16 @@ table {
 }
 
 .text-secondary {
-	color: #79AADB;
+	color: #79AADB !important;
 }
 .text-info {
-	color: #56799C;
+	color: #56799C !important;
 }
 .text-primary {
-	color: #2C3E50;
+	color: #2C3E50 !important;
 }
 .text-dark {
-	color: #1D2A36;
+	color: #1D2A36 !important;
 }
 
 body {
