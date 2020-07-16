@@ -13,6 +13,10 @@ export class NavbarComponentComponent implements OnInit {
     window.onscroll = () => { this.scrollFunction() }
   }
 
+  activateButton (element) {
+    console.log('element >>>>', element)
+  }
+
   scrollFunction () {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       document.getElementById("navbar-top").style.padding = "1rem 10px";
