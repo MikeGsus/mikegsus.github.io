@@ -1,6 +1,12 @@
 <div class="principal-container">
-  <app-navbar-component></app-navbar-component>
-  <div data-spy="scroll" data-target="#navbar-top" data-offset="0">
+  <app-navbar-component [focusId]="elementId"></app-navbar-component>
+  <div
+    data-spy="scroll"
+    data-target="#navbar-top"
+    data-offset="0"
+    (window:scroll)="handleScroll($event)"
+    id="sectionsContainer"
+  >
     <app-home></app-home>
     <app-project-section></app-project-section>
     <app-about-me></app-about-me>
