@@ -24,8 +24,4 @@ export class NavbarComponentComponent implements OnInit {
       document.getElementById("title").style.fontSize = "35px";
     }
   }
-
-  preventDefault (event : Event) : void {
-    event.preventDefault()
-  }
 }
