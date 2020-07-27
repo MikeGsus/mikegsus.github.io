@@ -29,6 +29,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width: 100%;
+  height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -80,7 +82,7 @@ table {
 	color: #79AADB !important;
 }
 .text-info {
-	color: #56799C !important;
+	color: #0b0b0c !important;
 }
 .text-primary {
 	color: #2C3E50 !important;
@@ -89,10 +91,6 @@ table {
 	color: #1D2A36 !important;
 }
 
-body {
-	min-width: 100vw;
-  min-height: 100vh;
-}
 
 h1, h2, h3, h4, h5, h6, a, thead, th, .title {
 	font-family: 'Roboto', sans-serif;
