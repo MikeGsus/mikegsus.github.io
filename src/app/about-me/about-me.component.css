@@ -6,3 +6,12 @@
 #about {
   margin-bottom: 50px;
 }
+
+.secondary {
+  color: #ffffff;
+}
+
+a.secondary:hover {
+  color: #486683;
+  background: #ffffff;
+}
