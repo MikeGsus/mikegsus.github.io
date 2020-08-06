@@ -10,3 +10,7 @@
 .project-item:hover {
 	background: #56799C;
 }
+
+.project-item:active {
+    background: #79AADB;
+}
