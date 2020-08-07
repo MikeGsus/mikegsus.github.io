@@ -15,3 +15,8 @@ a.secondary:hover {
   color: #486683;
   background: #ffffff;
 }
+
+a.secondary:active {
+  color: #ffffff;
+  background: #56799C;;
+}
