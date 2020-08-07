@@ -1,11 +1,14 @@
 <section class="page-section" id="projects">
+  <app-projects-modal [details]="selected"></app-projects-modal>
   <div class="container">
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">
       Portafolio
     </h2>
-    <div class="row">
-      <div class="col-md-6 col-lg-4 mb-5" *ngFor="let project of projects">
-        <img src="{{ project.src }}" alt="{{ project.name }}" class="project-item">
+    <div class="row justify-content-around">
+      <div class="col-md col-lg mb-5 text-center" *ngFor="let project of projects">
+        <a href="#" class="mx-auto" data-toggle="modal" data-target="#projectModal" (click)="selectProject(project)">
+          <img src="{{ project.src }}" alt="{{ project.name }}" class="project-item mx-auto">
+        </a>
       </div>
     </div>
   </div>
