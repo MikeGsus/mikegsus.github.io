@@ -35,7 +35,7 @@ export default function Portfolio() {
             </Link>
           </nav>
           <div className="flex flex-1 items-center justify-end space-x-2">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://drive.google.com/file/d/1iKA6exN48q5wZM2cXD4ze8QIm6kApst3/view?usp=drive_link" target="_blank">
                 <FileDown className="h-4 w-4" />
@@ -190,6 +190,7 @@ export default function Portfolio() {
                     <Badge>Tailwind CSS</Badge>
                     <Badge>HTML5</Badge>
                     <Badge>CSS3</Badge>
+                    <Badge>Angular</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -201,12 +202,14 @@ export default function Portfolio() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
+                    <Badge>Python</Badge>
+                    <Badge>Django</Badge>
                     <Badge>Node.js</Badge>
                     <Badge>Express</Badge>
-                    <Badge>Python</Badge>
-                    <Badge>FastAPI</Badge>
+                    <Badge>Vercel</Badge>
                     <Badge>REST APIs</Badge>
-                    <Badge>GraphQL</Badge>
+                    <Badge>Docker</Badge>
+                    <Badge>Spring Boot</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -219,11 +222,11 @@ export default function Portfolio() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     <Badge>PostgreSQL</Badge>
-                    <Badge>MongoDB</Badge>
                     <Badge>MySQL</Badge>
                     <Badge>Redis</Badge>
-                    <Badge>Supabase</Badge>
-                    <Badge>Prisma</Badge>
+                    <Badge>SQL Server</Badge>
+                    <Badge>Firebase</Badge>
+                    <Badge>AWS</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -237,10 +240,8 @@ export default function Portfolio() {
                   <div className="flex flex-wrap gap-2">
                     <Badge>React Native</Badge>
                     <Badge>Expo</Badge>
-                    <Badge>Docker</Badge>
-                    <Badge>AWS</Badge>
-                    <Badge>Git</Badge>
-                    <Badge>Vercel</Badge>
+                    <Badge>Swift</Badge>
+                    <Badge>Java</Badge>
                   </div>
                 </CardContent>
               </Card>
