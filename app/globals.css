@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 100 99;
+    --foreground: 44 62 80;
+    --card: 255 255 255;
+    --card-foreground: 44 62 80;
+    --popover: 255 255 255;
+    --popover-foreground: 44 62 80;
+    --primary: 44 62 80;
+    --primary-foreground: 255 255 255;
+    --secondary: 86 121 156;
+    --secondary-foreground: 255 255 255;
+    --muted: 50 71 92;
+    --muted-foreground: 165 189 213;
+    --accent: 121 170 219;
+    --accent-foreground: 255 255 255;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    --border: 203 211 227;
+    --input: 203 211 227;
+    --ring: 121 170 219;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 209 46 21;
+    --foreground: 248 250 252;
+    --card: 210 46 36;
+    --card-foreground: 248 250 252;
+    --popover: 24 33 42;
+    --popover-foreground: 248 250 252;
+    --primary: 121 170 219;
+    --primary-foreground: 15 20 25;
+    --secondary: 50 71 92;
+    --secondary-foreground: 248 250 252;
+    --muted: 44 62 80;
+    --muted-foreground: 148 163 184;
+    --accent: 86 121 156;
+    --accent-foreground: 248 250 252;
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+    --border: 210 45 86;
+    --input: 210 45 86;
+    --ring: 121 170 219;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Estilos personalizados optimizados para modo oscuro */
+.gradient-text {
+  background: linear-gradient(135deg, #79aadb 0%, #56799c 50%, #2c3e50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(135deg, #79aadb 0%, #9ec2e3 50%, #c3d5ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+}
+
+.dark .card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(121, 170, 219, 0.15), 0 10px 10px -5px rgba(121, 170, 219, 0.08);
+}
+
+.section-bg-light {
+  background: linear-gradient(135deg, rgba(121, 170, 219, 0.05) 0%, rgba(86, 121, 156, 0.05) 100%);
+}
+
+.dark .section-bg-light {
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.3) 0%, rgba(50, 71, 92, 0.2) 100%);
+}
+
+/* Mejoras para el modo oscuro */
+.dark {
+  color-scheme: dark;
+}
+
+.dark .bg-secondary-50\/50 {
+  background: rgba(44, 62, 80, 0.2);
+}
+
+.dark .bg-primary-50\/30 {
+  background: rgba(50, 71, 92, 0.2);
+}
