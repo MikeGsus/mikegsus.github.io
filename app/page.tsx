@@ -58,7 +58,7 @@ export default function Portfolio() {
           <div className="flex flex-col items-center text-center space-y-8">
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=150&width=150"
+                src="/avatar.png?height=150&width=150"
                 alt="Foto de perfil"
                 width={150}
                 height={150}
@@ -123,7 +123,7 @@ export default function Portfolio() {
               <Card className="group hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Image
-                    src="/placeholder.svg?height=200&width=400"
+                    src="/avatar.png?height=200&width=400"
                     alt="E-commerce Platform"
                     width={400}
                     height={200}
@@ -143,84 +143,6 @@ export default function Portfolio() {
                     <Badge className="bg-primary-100 text-primary-800 hover:bg-primary-200">TypeScript</Badge>
                     <Badge variant="secondary">Stripe</Badge>
                     <Badge>PostgreSQL</Badge>
-                  </div>
-                  <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild>
-                      <Link href="#" target="_blank">
-                        <Github className="mr-2 h-4 w-4" />
-                        Código
-                      </Link>
-                    </Button>
-                    <Button size="sm" asChild>
-                      <Link href="#" target="_blank">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="group hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Image
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="Task Manager"
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-2">Task Manager</CardTitle>
-                  <CardDescription className="mb-4">
-                    Aplicación de gestión de tareas con colaboración en tiempo real, notificaciones y análisis de
-                    productividad.
-                  </CardDescription>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge className="bg-accent-100 text-accent-800 hover:bg-accent-200">React</Badge>
-                    <Badge>Node.js</Badge>
-                    <Badge>Socket.io</Badge>
-                    <Badge>MongoDB</Badge>
-                  </div>
-                  <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild>
-                      <Link href="#" target="_blank">
-                        <Github className="mr-2 h-4 w-4" />
-                        Código
-                      </Link>
-                    </Button>
-                    <Button size="sm" asChild>
-                      <Link href="#" target="_blank">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="group hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <Image
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="Weather App"
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-2">Weather App</CardTitle>
-                  <CardDescription className="mb-4">
-                    Aplicación móvil del clima con pronósticos detallados, mapas interactivos y notificaciones
-                    personalizadas.
-                  </CardDescription>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge>React Native</Badge>
-                    <Badge>Expo</Badge>
-                    <Badge>API REST</Badge>
-                    <Badge>Redux</Badge>
                   </div>
                   <div className="flex gap-2">
                     <Button size="sm" variant="outline" asChild>
