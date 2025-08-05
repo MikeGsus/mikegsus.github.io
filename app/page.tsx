@@ -3,7 +3,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone, FileDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -37,13 +37,19 @@ export default function Portfolio() {
           <div className="flex flex-1 items-center justify-end space-x-2">
             <ThemeToggle />
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://github.com" target="_blank">
+              <Link href="https://drive.google.com/file/d/1iKA6exN48q5wZM2cXD4ze8QIm6kApst3/view?usp=drive_link" target="_blank">
+                <FileDown className="h-4 w-4" />
+                <span className="sr-only">CV</span>
+              </Link>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <Link href="https://github.com/MikeGsus" target="_blank">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://linkedin.com" target="_blank">
+              <Link href="https://www.linkedin.com/in/miguelgsus/" target="_blank">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -70,7 +76,7 @@ export default function Portfolio() {
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
                 Hola, soy{" "}
                 <span className="bg-gradient-to-r from-accent-400 to-secondary-300 bg-clip-text text-transparent">
-                  Alex Desarrollador
+                  Miguel Ángel
                 </span>
               </h1>
               <p className="mx-auto max-w-[700px] text-lg text-muted-foreground md:text-xl">
@@ -252,19 +258,25 @@ export default function Portfolio() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
-                <Link href="mailto:alex@ejemplo.com">
+                <Link href="mailto:mike08ahj@hotmail.com">
                   <Mail className="mr-2 h-4 w-4" />
-                  alex@ejemplo.com
+                  mike08ahj@hotmail.com
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="https://linkedin.com" target="_blank">
+                <Link href="https://drive.google.com/file/d/1iKA6exN48q5wZM2cXD4ze8QIm6kApst3/view?usp=drive_link" target="_blank">
+                <FileDown className="mr-2 h-4 w-4" />
+                  Descargar CV
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <Link href="https://www.linkedin.com/in/miguelgsus/" target="_blank">
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/MikeGsus" target="_blank">
                   <Github className="mr-2 h-4 w-4" />
                   GitHub
                 </Link>
@@ -280,9 +292,9 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Code className="h-5 w-5" />
-              <span className="font-semibold">Alex Desarrollador</span>
+              <span className="font-semibold">Miguel Ángel</span>
             </div>
-            <p className="text-sm text-muted-foreground">© 2024 Todos los derechos reservados. Hecho con ❤️ y Next.js</p>
+            <p className="text-sm text-muted-foreground">© 2025 Todos los derechos reservados. Hecho con ❤️ y Next.js</p>
           </div>
         </div>
       </footer>
