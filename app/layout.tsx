@@ -3,6 +3,9 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import Clarity from "@microsoft/clarity"
+
+const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -16,6 +19,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  if (clarityProjectId) {
+    Clarity.init(clarityProjectId)
+  } else {
+    console.warn("Clarity project ID is not set. Skipping initialization.")
+  }
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={inter.className}>
