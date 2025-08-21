@@ -6,9 +6,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone, FileDown } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { ThemeToggle } from "@/components/theme-toggle"
+import Clarity from "@microsoft/clarity"
+import { useEffect } from "react"
+
+const clarityProjectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID
 
 export default function Portfolio() {
+  useEffect(() => {
+    if (clarityProjectId) {
+      console.log("Initializing Clarity with project ID:", clarityProjectId)
+      Clarity.init(clarityProjectId)
+    } else {
+      console.warn("Clarity project ID is not set. Skipping initialization.")
+    }
+  }, [])
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
